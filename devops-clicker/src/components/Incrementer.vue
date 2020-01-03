@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="score">{{ score }}</div>
-    <button @click="increment()">{{ label }}</button>
+    <button @click="increment()">{{ target }}</button>
   </div>
 </template>
 
@@ -14,7 +14,6 @@ export default Vue.extend({
   props: {
     target: { type: String, required: true },
     score: { type: Number, required: true, default: 0 },
-    label: String,
   },
 
   methods: {
